@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>お問い合わせ — わたりどり家計簿</title>
+<style>
+  :root { --bg:#F4F1EA; --surface:#FCFAF5; --ink:#211E1A; --muted:#6B6259; --rule:#DDD6C9; --accent:#27496D; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#191714; --surface:#221F1B; --ink:#EDE8DE; --muted:#A79C8E; --rule:#3A342C; --accent:#8FB3D9; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",-apple-system,BlinkMacSystemFont,sans-serif;
+         line-height:1.8; font-size:16px; }
+  main { max-width:44rem; margin:0 auto; padding:3rem 1.25rem 5rem; }
+  h1 { font-size:1.75rem; line-height:1.4; margin:0 0 .5rem; letter-spacing:.01em; }
+  h2 { font-size:1.1rem; margin:2.5rem 0 .75rem; padding-top:1.25rem; border-top:1px solid var(--rule); }
+  h2:first-of-type { border-top:0; }
+  p { margin:0 0 1rem; }
+  ul { margin:0 0 1rem; padding-left:1.35rem; }
+  li { margin-bottom:.4rem; }
+  code { background:var(--surface); border:1px solid var(--rule); border-radius:4px;
+         padding:.1em .35em; font-size:.9em; }
+  strong { font-weight:600; }
+  a { color:var(--accent); }
+</style>
+<style>
+  nav { display:flex; gap:1.25rem; flex-wrap:wrap; margin:0 0 2.5rem;
+        padding-bottom:1rem; border-bottom:1px solid var(--rule); font-size:.95rem; }
+  nav a { color:var(--muted); text-decoration:none; }
+  nav a.on { color:var(--ink); font-weight:600; }
+  nav a:hover { color:var(--accent); }
+  footer { margin-top:4rem; padding-top:1.25rem; border-top:1px solid var(--rule);
+           color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">プライバシーポリシー</a><a href="support.html" class="on">お問い合わせ</a></nav>
+<h1>お問い合わせ</h1>
+<p>わたりどり家計簿をお使いいただきありがとうございます。
+不具合の報告・ご要望・ご質問は、次のアドレスまでお送りください。</p>
+<p><a href="mailto:kna073075@gmail.com">kna073075@gmail.com</a></p>
+<h2>お問い合わせの前に</h2>
+<ul>
+<li><strong>記録が消えた</strong> — 記録はお使いの端末の中だけに保存されます。端末の初期化やアプリの削除で失われます。設定の「バックアップ」からファイルに書き出して保管してください。</li>
+<li><strong>円換算が出ない</strong> — レートを 1 日 1 回取りに行きます。オフラインのときや取得前は表示されません。主通貨が日本円のときは換算が不要なので表示されません。</li>
+<li><strong>お知らせが来ない</strong> — iPhone の「設定」→「通知」で、わたりどり家計簿の通知が許可されているかご確認ください。</li>
+<li><strong>期間の区切りが思っていたのと違う</strong> — 設定の「給料期間」で、間隔と起点(最後に給料が入った日)を変えられます。保存する前に新しい区切りを確認できます。</li>
+</ul>
+<h2>お返事について</h2>
+<p>個人で開発・運営しているため、お返事にお時間をいただくことがあります。ご了承ください。</p>
+<footer>わたりどり家計簿 — Kosuke Hayashi</footer>
+</main>
+</body>
+</html>

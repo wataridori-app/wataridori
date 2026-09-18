@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>プライバシーポリシー — わたりどり家計簿</title>
+<style>
+  :root { --bg:#F4F1EA; --surface:#FCFAF5; --ink:#211E1A; --muted:#6B6259; --rule:#DDD6C9; --accent:#27496D; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#191714; --surface:#221F1B; --ink:#EDE8DE; --muted:#A79C8E; --rule:#3A342C; --accent:#8FB3D9; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",-apple-system,BlinkMacSystemFont,sans-serif;
+         line-height:1.8; font-size:16px; }
+  main { max-width:44rem; margin:0 auto; padding:3rem 1.25rem 5rem; }
+  h1 { font-size:1.75rem; line-height:1.4; margin:0 0 .5rem; letter-spacing:.01em; }
+  h2 { font-size:1.1rem; margin:2.5rem 0 .75rem; padding-top:1.25rem; border-top:1px solid var(--rule); }
+  h2:first-of-type { border-top:0; }
+  p { margin:0 0 1rem; }
+  ul { margin:0 0 1rem; padding-left:1.35rem; }
+  li { margin-bottom:.4rem; }
+  code { background:var(--surface); border:1px solid var(--rule); border-radius:4px;
+         padding:.1em .35em; font-size:.9em; }
+  strong { font-weight:600; }
+  a { color:var(--accent); }
+</style>
+<style>
+  nav { display:flex; gap:1.25rem; flex-wrap:wrap; margin:0 0 2.5rem;
+        padding-bottom:1rem; border-bottom:1px solid var(--rule); font-size:.95rem; }
+  nav a { color:var(--muted); text-decoration:none; }
+  nav a.on { color:var(--ink); font-weight:600; }
+  nav a:hover { color:var(--accent); }
+  footer { margin-top:4rem; padding-top:1.25rem; border-top:1px solid var(--rule);
+           color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./" class="on">プライバシーポリシー</a><a href="support.html">お問い合わせ</a></nav>
+
+<h1>プライバシーポリシー — わたりどり家計簿</h1>
+<p>最終更新: 2026年9月17日</p>
+<h2>要点</h2>
+<p><strong>わたりどり家計簿は、あなたの情報を集めません。</strong> 記録したお金のデータは、すべてあなたの iPhone の中だけに</p>
+<p>保存されます。開発者はそれを見ることができません。アカウント登録はありません。広告はありません。</p>
+<p>アクセス解析も行いません。第三者の SDK を組み込んでいません。</p>
+<p>ただし 1 つだけ、外部への通信があります。<strong>為替レートの取得</strong>です。下の「3」で説明します。</p>
+<h2>1. 保存する情報と、その場所</h2>
+<p>本アプリが扱うのは、あなた自身が入力した次の情報です。</p>
+<ul>
+<li>収入と支出の記録(金額・日付・カテゴリ・メモ・現金かどうか)</li>
+<li>仕事の名前、固定費の規則、貯金目標、期限(ビザ期限・帰国日など)、はたらいた記録簿</li>
+<li>給料期間の設定、通貨とレート、手元の残高、アプリの設定</li>
+</ul>
+<p>これらは<strong>すべてお使いの端末の中のファイルに保存されます</strong>。開発者のサーバーは存在せず、</p>
+<p>送信も、同期も、バックアップも行いません。</p>
+<p>端末を紛失したり、アプリを削除したりすると<strong>データは失われます</strong>。設定の「バックアップ」から</p>
+<p>ファイルとして書き出して、ご自身で保管してください。</p>
+<h2>2. 開発者が受け取る情報</h2>
+<p><strong>ありません。</strong> アカウントもログインもなく、あなたが誰であるかを示す情報を開発者は一切受け取りません。</p>
+<p>クラッシュや利用状況を送信する仕組みも組み込んでいません。</p>
+<p>App Store の仕組みとして Apple から開発者に提供される統計(ダウンロード数など)はありますが、</p>
+<p>これは匿名の集計であり、個人を特定できるものではありません。</p>
+<h2>3. 為替レートの取得(唯一の外部通信)</h2>
+<p>円換算を表示するため、本アプリは <strong>Frankfurter</strong>(<code>api.frankfurter.dev</code>)という無料の為替レート提供サービスへ、</p>
+<p><strong>1 日に最大 1 回</strong>、通信します。提供元は欧州中央銀行の参考レートです。</p>
+<ul>
+<li><strong>送信する内容</strong>: 基準にする通貨コード 1 つ(例 <code>AUD</code>)のみ。</li>
+<li><strong>送信しない内容</strong>: あなたの記録・金額・残高・目標・期限など、アプリ内のデータは<strong>一切送信しません</strong>。</li>
+<li>インターネット通信の仕組み上、接続元の <strong>IP アドレス</strong>は相手先に伝わります。これはウェブサイトを</li>
+</ul>
+<p>  開くときと同じもので、本アプリがそれを保存したり利用したりすることはありません。</p>
+<ul>
+<li>通信は暗号化(HTTPS)されます。</li>
+<li>端末がオフラインのときや、その日すでに取得済みのときは、通信しません。</li>
+</ul>
+<p>主通貨を「日本円」に設定している場合、換算の必要がないため<strong>この通信も行いません</strong>。</p>
+<h2>4. 端末の機能の利用</h2>
+<ul>
+<li><strong>通知</strong>: 固定費の前日や期限のお知らせを表示するために使います。通知はすべて端末の中で組み立てられ、</li>
+</ul>
+<p>  外部へ送信されません。許可しなくてもアプリは使えます。</p>
+<ul>
+<li><strong>Face ID / Touch ID / パスコード</strong>(App Lock): アプリを開くときの本人確認に使います。</li>
+</ul>
+<p>  生体情報は iOS が管理し、<strong>本アプリが受け取ることはありません</strong>。本アプリが知るのは成功か失敗かだけです。</p>
+<ul>
+<li><strong>ファイルの書き出し・読み込み</strong>: あなたが操作したときだけ、あなたが選んだ場所に保存・読み込みします。</li>
+</ul>
+<h2>5. 外部リンク</h2>
+<p>税金やビザについて、公的機関のページ(ATO、Home Affairs)へのリンクがあります。</p>
+<p>タップするとブラウザが開きます。<strong>リンク先は本アプリとは別の事業者が運営しており、本ポリシーは適用されません。</strong></p>
+<p>本アプリは税金やビザの要件を判定しません。表示するのは、あなたが自分で入力した日付とその計算結果だけです。</p>
+<h2>6. お子さまの利用</h2>
+<p>本アプリは特定の年齢層を対象としたものではなく、個人情報を収集しないため、</p>
+<p>お子さまから情報を集めることもありません。</p>
+<h2>7. 情報の共有・売却</h2>
+<p><strong>行いません。</strong> 集めていないため、共有も売却もできません。</p>
+<h2>8. あなたの権利</h2>
+<p>データはあなたの端末の中にあり、あなたが完全に管理しています。</p>
+<p>いつでも記録を編集・削除でき、アプリを削除すればすべて消えます。開発者への削除依頼は不要です</p>
+<p>(開発者は何も保持していません)。</p>
+<h2>9. 本ポリシーの変更</h2>
+<p>変更する場合は、この文書の日付を更新します。通信や保存の扱いが変わるときは、</p>
+<p>アプリの更新情報にも記載します。</p>
+<h2>10. お問い合わせ</h2>
+<p>連絡先: (ここにメールアドレスを記載)</p>
+
+<footer>わたりどり家計簿 — Kosuke Hayashi</footer>
+</main>
+</body>
+</html>
